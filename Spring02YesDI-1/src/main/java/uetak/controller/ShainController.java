@@ -2,11 +2,14 @@ package uetak.controller;
 
 import java.util.ArrayList;
 
+import org.springframework.stereotype.Controller;
+
 import uetak.entity.Shain;
 import uetak.service.ShainService;
 /** 
  * ブラウザからリクエストを受け取り
  * レスポンスを返すコントローラー*/
+@Controller
 public class ShainController {
 	public void findAll() {
 		//社員サービスのインスタンスを作成

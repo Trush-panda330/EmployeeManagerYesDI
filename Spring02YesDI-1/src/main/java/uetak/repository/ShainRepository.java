@@ -5,8 +5,11 @@ package uetak.repository;
 
 import java.util.ArrayList;
 
+import org.springframework.stereotype.Repository;
+
 import uetak.entity.Shain;
 
+@Repository
 public class ShainRepository {
 	
 	//社員リストを取得
