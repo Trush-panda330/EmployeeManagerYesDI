@@ -2,6 +2,7 @@ package uetak.service;
 
 import java.util.ArrayList;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import uetak.entity.Shain;
@@ -14,16 +15,19 @@ import uetak.repository.ShainRepository;
 */
 @Service
 public class ShainService {
+	
+	@Autowired
+	ShainRepository shainRepository;
+
 	//社員リストを取得
 	public ArrayList<Shain> findAll() {
-		
+		//
+
 		//社員リポジトリのインスタンス作成
-		ShainRepository shainRepository = new ShainRepository();
-		
-		
-		
+		//		ShainRepository shainRepository = new ShainRepository();
+
 		//社員リストを取得して返す
 		return shainRepository.findAll();
 	}
-	
+
 }

@@ -8,6 +8,11 @@ import java.util.ArrayList;
 import org.springframework.stereotype.Repository;
 
 import uetak.entity.Shain;
+/**
+ * データベースと接続するクラス
+ * 一番下
+ * もっとも使われる
+ * */
 
 @Repository
 public class ShainRepository {
